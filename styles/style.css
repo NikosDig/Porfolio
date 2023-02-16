@@ -1,0 +1,103 @@
+:root {
+    --mainbgcolor: #1E2631;
+    --brown: #968876;
+    --text: #fff;
+}
+
+/* global styles */
+body {
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    background-color: var(--mainbgcolor);
+    color: var(--text);
+    font-family: poppins,Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+a ,
+h1 ,
+h2 ,
+h3 {
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+/* header styles */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+}
+
+.logo-nikos {
+    margin: 0px 0px -32px -23px;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.logo-digalakis {
+    color: var(--mainbgcolor);
+    -webkit-text-stroke: 1px var(--text);
+    z-index: 99;
+}
+
+.logo:hover .logo-nikos,
+.logo-nikos:focus {
+    margin: 0 0 -10px 0px;
+    transition: all 0.5s ease;
+}
+nav {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid var(--brown);
+    border-radius: 50px;
+    margin: 25px 0;
+}
+nav a {
+    color: var(--mainbgcolor);
+    margin: 10px;
+    padding: 7px;
+}
+
+nav a:hover,
+nav a:focus,
+.active {
+    background-color: var(--brown);
+    color: var(--text);
+    border-radius: 50px;
+}
+
+/* heading with media logos */
+
+.main-heading {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--brown);
+    padding: 20px 4px;
+    margin: 30px 0;
+}
+.media-icons img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.github:hover {
+    background-color: #a000c8;
+}
+.linkdin:hover {
+    background-color: #0077b5;
+}
+.mail:hover {
+    background-color: #fff;
+}

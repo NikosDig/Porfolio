@@ -24,6 +24,9 @@ h3 {
     text-transform: uppercase;
 }
 
+.underline {
+    text-decoration: underline;
+}
 /* header styles */
 header {
     display: flex;
@@ -126,4 +129,15 @@ nav a:focus,
 }
 .attributes img {
     width: 120px;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--brown);
+}
+
+footer .media-icons {
+    display: flex;
+    justify-content: space-evenly;
 }

@@ -1,0 +1,42 @@
+@media (min-width: 550px) {
+    .container {
+        height: 400px;
+        width: 70%;
+    }
+}
+@media (min-width: 600px) {
+    .attributes {
+        flex-direction: row;
+    }
+}
+@media (min-width: 700px) {
+    header  {
+        flex-direction: row;
+    }
+    nav a {
+        margin: 10px;
+        padding: 7px;
+    }
+}
+@media (min-width:800px) {
+    .pic-with-attributes {
+        flex-direction: row;
+    }
+    .about-countainer {
+        flex-direction: row;
+    }
+    .about-img  img {
+        margin: 0 20px;
+    }
+    .knowledge img {
+        width: 7%;
+    }
+    #fix-to-vscode-icon {
+        width: 9%;
+    }
+}
+@media (min-width:900px) {
+    .hidden {
+        visibility: hidden;
+    }
+}

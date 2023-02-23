@@ -5,25 +5,40 @@
 }
 .projects-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     margin: 60px 0;
+    gap: 30px;
 }
 
 /* card relative styling */
+.hidden {
+  visibility: visible;
+}
 .container  {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 340px;
+    width: 95%;
     background: var(--mainbgcolor);
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 0 20px 8px #d0d0d0;
   }
+  .card-details-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
   
   .content {
     position: absolute;
     top: 40%;
+    left: 0%;
+    right: 0%;
     transform: translatey(-50%);
     padding: 40px;
   }
@@ -35,6 +50,7 @@
   
   p {
     font-weight: 300;
+    text-align: center;
   }
   
   .rainy-days,
@@ -51,18 +67,20 @@
     content: "";
     height: 100%;
     width: 100%;
-    transition: 1s;
+    transition: 1.25s 0.2s ease-in-out; 
   }
   
   .container:hover .rainy-days::before,
   .container:hover .comunity-science-museum::before,
   .container:hover .wonders-of-the-world::before{
-    transform: translatex(-300px);
+
+    transform: translatex(-100%);
   }
   .links {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    gap: 5px;
   }
   .rainy-days::before{
     background: center 100% / 100% 100% no-repeat url(../assets/rainy-days.jpg);
@@ -73,3 +91,7 @@
   .wonders-of-the-world::before {
     background: center 100% / 100% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
   }
+
+
+
+

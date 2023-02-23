@@ -1,0 +1,31 @@
+/* picture with attributes section */
+.pic-with-attributes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.mugshot img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+.attributes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.attributes-heading {
+    text-align: center;
+}
+.attributes img {
+    width: 120px;
+}

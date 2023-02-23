@@ -23,6 +23,9 @@ h3 {
     color: var(--text);
     text-transform: uppercase;
 }
+details {
+    cursor: pointer;
+}
 
 .underline {
     text-decoration: underline;
@@ -30,6 +33,7 @@ h3 {
 /* header styles */
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
@@ -66,8 +70,7 @@ nav {
 }
 nav a {
     color: var(--mainbgcolor);
-    margin: 10px;
-    padding: 7px;
+    padding: 4px;
 }
 
 nav a:hover,
@@ -92,7 +95,7 @@ nav a:focus,
 .media-icons img {
     width: 40px;
     height: 40px;
-    padding: 5px;
+    padding: 15px;
 }
 
 .github:hover {
@@ -103,32 +106,6 @@ nav a:focus,
 }
 .mail:hover {
     background-color: #fff;
-}
-
-/* picture with attributes section */
-.pic-with-attributes {
-    display: flex;
-    gap: 25px;
-}
-
-.mugshot img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 60px;
-}
-.attributes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.attributes {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
-.attributes img {
-    width: 120px;
 }
 
 

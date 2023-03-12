@@ -35,3 +35,19 @@
 #fix-to-vscode-icon {
     width: 16%;
 }
+
+.animation-about-images{
+    animation: animation-about-images 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@keyframes animation-about-images {
+    0% {
+              transform: translateX(-1000px) rotate(-720deg);
+              filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0) rotate(0deg);
+              filter: blur(0);
+      opacity: 1;
+    }
+}

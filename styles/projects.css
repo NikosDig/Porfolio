@@ -66,8 +66,8 @@
     position: absolute;
     content: "";
     height: 100%;
-    width: 50%;
-    transition: 1.25s 0.2s ease-in-out; 
+    width: 50.1%;
+    transition: 1s 0.2s ease-in-out; 
   }
   .rainy-days::after,
   .comunity-science-museum::after,
@@ -77,7 +77,7 @@
     right: 0;
     height: 100%;
     width: 50%;
-    transition: 1.25s 0.2s ease-in-out; 
+    transition: 1s 0.2s ease-in-out; 
   }
   
   .container:hover .rainy-days::before,
@@ -120,7 +120,7 @@
   .wonders-of-the-world::after {
     background: right 100% / 200% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
   }
-  
+
   .container:hover .rainy-days::after,
   .container:hover .comunity-science-museum::after,
   .container:hover .wonders-of-the-world::after{

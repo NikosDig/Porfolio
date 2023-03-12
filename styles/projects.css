@@ -66,7 +66,17 @@
     position: absolute;
     content: "";
     height: 100%;
-    width: 100%;
+    width: 50%;
+    transition: 1.25s 0.2s ease-in-out; 
+  }
+  .rainy-days::after,
+  .comunity-science-museum::after,
+  .wonders-of-the-world::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 50%;
     transition: 1.25s 0.2s ease-in-out; 
   }
   
@@ -83,15 +93,36 @@
     gap: 5px;
   }
   .rainy-days::before{
-    background: center 100% / 100% 100% no-repeat url(../assets/rainy-days.jpg);
+    background: left 100% / 200% 100% no-repeat url(../assets/rainy-days.jpg);
   }
   .comunity-science-museum::before {
-    background: center 100% / 100% 100% no-repeat url(../assets/community-science-museum.jpg);
+    background: left 100% / 200% 100% no-repeat url(../assets/community-science-museum.jpg);
   }
   .wonders-of-the-world::before {
-    background: center 100% / 100% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
+    background: left 100% / 200% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
   }
 
-
-
-
+  .rainy-days::after,
+  .comunity-science-museum::after,
+  .wonders-of-the-world::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    right: 0;
+  }
+  .rainy-days::after{
+    background: right 100% / 200% 100% no-repeat url(../assets/rainy-days.jpg);
+  }
+  .comunity-science-museum::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/community-science-museum.jpg);
+  }
+  .wonders-of-the-world::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
+  }
+  
+  .container:hover .rainy-days::after,
+  .container:hover .comunity-science-museum::after,
+  .container:hover .wonders-of-the-world::after{
+    transform: translatex(100%);
+  } 

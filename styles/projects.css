@@ -55,14 +55,18 @@
   
   .rainy-days,
   .comunity-science-museum,
-  .wonders-of-the-world {
+  .wonders-of-the-world,
+  .find,
+  .julian {
     width: 100%;
     height: 100%;
   }
   
   .rainy-days::before,
   .comunity-science-museum::before,
-  .wonders-of-the-world::before {
+  .wonders-of-the-world::before,
+  .find::before,
+  .julian::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -71,7 +75,9 @@
   }
   .rainy-days::after,
   .comunity-science-museum::after,
-  .wonders-of-the-world::after {
+  .wonders-of-the-world::after,
+  .find::after,
+  .julian::after {
     position: absolute;
     content: "";
     right: 0;
@@ -82,7 +88,9 @@
   
   .container:hover .rainy-days::before,
   .container:hover .comunity-science-museum::before,
-  .container:hover .wonders-of-the-world::before{
+  .container:hover .wonders-of-the-world::before,
+  .container:hover .find::before,
+  .container:hover .julian::before{
 
     transform: translatex(-100%);
   }
@@ -101,10 +109,18 @@
   .wonders-of-the-world::before {
     background: left 100% / 200% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
   }
+  .find::before {
+    background: left 100% / 200% 100% no-repeat url(../assets/Screenshot\ find-com.png);
+  }
+  .julian::before {
+    background: left 100% / 200% 100% no-repeat url(../assets/Screenshot\ julian.png);
+  }
 
   .rainy-days::after,
   .comunity-science-museum::after,
-  .wonders-of-the-world::after {
+  .wonders-of-the-world::after,
+  .find::after,
+  .julian::after {
     position: absolute;
     content: "";
     height: 100%;
@@ -120,9 +136,17 @@
   .wonders-of-the-world::after {
     background: right 100% / 200% 100% no-repeat url(../assets/wonders-of-the-world.jpg);
   }
+  .find::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/Screenshot\ find-com.png);
+  }
+  .julian::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/Screenshot\ julian.png);
+  }
 
   .container:hover .rainy-days::after,
   .container:hover .comunity-science-museum::after,
-  .container:hover .wonders-of-the-world::after{
+  .container:hover .wonders-of-the-world::after,
+  .container:hover .find::after,
+  .container:hover .julian::after{
     transform: translatex(100%);
   } 

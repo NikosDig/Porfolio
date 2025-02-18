@@ -9,17 +9,20 @@
     margin: auto;
 }
 
-.about-img  img {
+.about-img img {
     width: 250px;
     height: 300px;
     border-radius: 30px;
 }
+
 .about-heading {
     text-align: center;
 }
+
 .about-heading-and-description {
     margin: 10px;
 }
+
 .knowledge {
     display: flex;
     justify-content: space-around;
@@ -29,25 +32,29 @@
     margin: 5rem auto;
     padding: 15px;
 }
+
 .knowledge img {
     width: 14%;
 }
+
 #fix-to-vscode-icon {
     width: 16%;
 }
 
-.animation-about-images{
+.animation-about-images {
     animation: animation-about-images 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
 @keyframes animation-about-images {
     0% {
-              transform: translateX(-1000px) rotate(-720deg);
-              filter: blur(50px);
-      opacity: 0;
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
     }
+
     100% {
-              transform: translateX(0) rotate(0deg);
-              filter: blur(0);
-      opacity: 1;
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
     }
 }

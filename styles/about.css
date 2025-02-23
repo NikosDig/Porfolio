@@ -40,6 +40,12 @@
 #fix-to-vscode-icon {
     width: 16%;
 }
+#fix-to-react-icon{
+    width: 20%;
+    max-width: 150px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
 
 .animation-about-images {
     animation: animation-about-images 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;

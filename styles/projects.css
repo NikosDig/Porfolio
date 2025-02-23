@@ -58,7 +58,9 @@
   .comunity-science-museum,
   .wonders-of-the-world,
   .find,
-  .julian {
+  .julian,
+  .e-commerce,
+  .holidayz {
     width: 100%;
     height: 100%;
   }
@@ -67,7 +69,9 @@
   .comunity-science-museum::before,
   .wonders-of-the-world::before,
   .find::before,
-  .julian::before {
+  .julian::before,
+  .e-commerce::before,
+  .holidayz::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -78,7 +82,9 @@
   .comunity-science-museum::after,
   .wonders-of-the-world::after,
   .find::after,
-  .julian::after {
+  .julian::after,
+  .e-commerce::after,
+  .holidayz::after {
     position: absolute;
     content: "";
     right: 0;
@@ -91,7 +97,9 @@
   .container:hover .comunity-science-museum::before,
   .container:hover .wonders-of-the-world::before,
   .container:hover .find::before,
-  .container:hover .julian::before{
+  .container:hover .julian::before,
+  .container:hover .e-commerce::before,
+  .container:hover .holidayz::before{
 
     transform: translatex(-100%);
   }
@@ -116,12 +124,20 @@
   .julian::before {
     background: left 100% / 200% 100% no-repeat url(../assets/Screenshot\ julian.png);
   }
+  .e-commerce::before {
+    background: left 100% / 200% 100% no-repeat url(../assets/e-comerce\ store.png);
+  }
+  .holidayz::before {
+    background: left 100% / 200% 100% no-repeat url(../assets/holidayz.png);
+  }
 
   .rainy-days::after,
   .comunity-science-museum::after,
   .wonders-of-the-world::after,
   .find::after,
-  .julian::after {
+  .julian::after,
+  .e-commerce::after,
+  .holidayz::after {
     position: absolute;
     content: "";
     height: 100%;
@@ -143,11 +159,19 @@
   .julian::after {
     background: right 100% / 200% 100% no-repeat url(../assets/Screenshot\ julian.png);
   }
+  .e-commerce::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/e-comerce\ store.png);
+  }
+  .holidayz::after {
+    background: right 100% / 200% 100% no-repeat url(../assets/holidayz.png);
+  }
 
   .container:hover .rainy-days::after,
   .container:hover .comunity-science-museum::after,
   .container:hover .wonders-of-the-world::after,
   .container:hover .find::after,
-  .container:hover .julian::after{
+  .container:hover .julian::after,
+  .container:hover .e-commerce::after,
+  .container:hover .holidayz::after{
     transform: translatex(100%);
   } 

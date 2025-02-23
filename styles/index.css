@@ -11,7 +11,7 @@
     height: 300px;
     border-radius: 50%;
     margin-top: 60px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .attributes-container {
